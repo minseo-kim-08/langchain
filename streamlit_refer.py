@@ -63,6 +63,10 @@ def main():
 
     # Chat logic
     if query := st.chat_input("질문을 입력해주세요."):
+        if st.session_state.conversation is None:
+        st.warning("먼저 문서를 업로드하고 'Process' 버튼을 눌러주세요.")
+        st.stop()
+        
         st.session_state.messages.append({"role": "user", "content": query})
 
         with st.chat_message("user"):
