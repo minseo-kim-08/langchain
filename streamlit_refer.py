@@ -21,8 +21,8 @@ from langchain.memory import StreamlitChatMessageHistory
 
 def main():
     st.set_page_config(
-    page_title="Legal Counsel",
-    page_icon=":books:")
+    page_title="Chatbot",
+    page_icon=":robot:")
 
     st.title("_Private :red[Legal Counsel]_ :books:")
 
