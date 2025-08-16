@@ -21,10 +21,10 @@ from langchain.memory import StreamlitChatMessageHistory
 
 def main():
     st.set_page_config(
-    page_title="DirChat",
+    page_title="Legal Counsel",
     page_icon=":books:")
 
-    st.title("_Private Data :red[QA Chat]_ :books:")
+    st.title("_Private :red[Legal Counsel]_ :books:")
 
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
@@ -53,7 +53,7 @@ def main():
 
     if 'messages' not in st.session_state:
         st.session_state['messages'] = [{"role": "assistant", 
-                                        "content": "안녕하세요! 주어진 문서에 대해 궁금하신 것이 있으면 언제든 물어봐주세요!"}]
+                                        "content": "안녕하세요! 법률 상담에 오신 것을 환영합니다. 문서를 업로드하고 그에 기반한 질문을 해주세요!"}]
 
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
