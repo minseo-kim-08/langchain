@@ -24,7 +24,7 @@ def main():
     page_title="Chatbot",
     page_icon=":robot:")
 
-    st.title("_Private :red[Legal Counsel]_ :books:")
+    st.title("_Legal Counsel Chatbot_ :robot:")
 
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
