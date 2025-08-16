@@ -22,9 +22,9 @@ from langchain.memory import StreamlitChatMessageHistory
 def main():
     st.set_page_config(
     page_title="Chatbot",
-    page_icon=":robot_face:")
+    page_icon=":robot:")
 
-    st.title("_Legal Counsel Chatbot_ :robot_face:")
+    st.title("_Legal Counsel Chatbot_ :robot:")
 
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
