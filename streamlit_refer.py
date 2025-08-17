@@ -24,7 +24,7 @@ def main():
     page_title="Chatbot",
     page_icon=":robot:")
 
-    st.title("_법률 상담 챗봇_ :robot:")
+    st.title("_문서 기반 법률 상담 챗봇_ :robot:")
 
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
@@ -53,7 +53,7 @@ def main():
 
     if 'messages' not in st.session_state:
         st.session_state['messages'] = [{"role": "assistant", 
-                                        "content": "안녕하세요! 법률 상담에 오신 것을 환영합니다. 문서를 업로드하고 그에 기반한 질문을 해주세요!"}]
+                                        "content": "안녕하세요! 내용을 이해하기 어려운 문서가 있다면 문서를 업로드하고 질문을 해주세요."}]
 
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
